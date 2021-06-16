@@ -1,12 +1,9 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:screen_tester/screen_tester.dart';
-
 void main() {
-  test('adds one to input values', () {
-    final calculator = Calculator();
-    expect(calculator.addOne(2), 3);
-    expect(calculator.addOne(-7), -6);
-    expect(calculator.addOne(0), 1);
+  group('ScreenTester widget tests.', () {
+    test('Need to write some tests', () {
+      /// TODO: need to write widget tests.
+    });
   });
 }
