@@ -32,6 +32,10 @@ doc/api/
 .pub/
 /build/
 
+android
+ios
+web
+
 **/*.log
 hold
 .hold

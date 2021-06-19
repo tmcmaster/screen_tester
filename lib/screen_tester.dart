@@ -42,7 +42,7 @@ class ScreenTester extends StatelessWidget {
   Widget _buildDevicePreviewContainer(child) {
     return DevicePreviewContainer(
       device: options.device,
-      child: child,
+      child: (options.safeArea ? SafeArea(child: child) : child),
     );
   }
 }

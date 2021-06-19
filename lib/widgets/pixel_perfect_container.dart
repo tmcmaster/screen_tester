@@ -13,25 +13,34 @@ class PixelPerfectContainer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return PixelPerfect.extended(
-      image: image,
-      initBottom: 20, //  default bottom distance (optional)
-      offset: Offset(0, 0), // default image offset (optional)
-      initOpacity: 0.3, // init opacity value (optional)
-      child: Scaffold(
-        body: Container(
-          decoration: BoxDecoration(
-            border: Border.all(
-              color: Colors.blue,
+    return Row(
+      textDirection: TextDirection.ltr,
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+      children: [
+        /*Expanded(
+        child: Container(color: Colors.red),
+      ),*/
+        Expanded(
+          child: PixelPerfect.extended(
+            image: image,
+            initBottom: 20, //  default bottom distance (optional)
+            offset: Offset(0, 0), // default image offset (optional)
+            initOpacity: 1, // init opacity value (optional)
+            child: Scaffold(
+              body: Container(
+                decoration: BoxDecoration(
+                  border: Border.all(
+                    color: Colors.orange,
+                  ),
+                ),
+                child: OverflowBox(
+                  child: child,
+                ),
+              ),
             ),
           ),
-          child: SizedBox(
-            width: 410,
-            height: 1100,
-            child: child,
-          ),
-        ),
-      ),
+        )
+      ],
     );
   }
 }

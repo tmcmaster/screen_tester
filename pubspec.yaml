@@ -7,6 +7,11 @@ environment:
   sdk: ">=2.12.0 <3.0.0"
   flutter: ">=2.2.0"
 
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+
 dependencies:
   flutter:
     sdk: flutter
@@ -19,8 +24,7 @@ dev_dependencies:
   pedantic:
   lint:
   test:
-
-flutter:
-  uses-material-design: true
-  assets:
-    - assets/images/
+  widget_tester:
+    path: ../widget_tester
+  theme_builder:
+    path: ../theme_builder
