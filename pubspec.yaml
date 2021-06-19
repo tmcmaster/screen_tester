@@ -24,6 +24,8 @@ dev_dependencies:
   pedantic:
   lint:
   test:
+  flutter_workbench:
+    path: ../flutter_workbench
   widget_tester:
     path: ../widget_tester
   theme_builder:
