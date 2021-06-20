@@ -15,7 +15,7 @@ flutter:
 dependencies:
   flutter:
     sdk: flutter
-  pixel_perfect: ^1.1.0
+  #pixel_perfect: ^1.1.0
   device_preview: ^0.7.3
 
 dev_dependencies:

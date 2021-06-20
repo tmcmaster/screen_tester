@@ -34,6 +34,7 @@ class ScreenTester extends StatelessWidget {
   Widget _buildPixelPerfectContainer(child) {
     return PixelPerfectContainer(
       image: options.image,
+      scale: options.scale,
       child: child,
     );
   }
