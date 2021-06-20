@@ -9,6 +9,7 @@ void main() {
     styles: MyStyle.themes,
     image: 'assets/images/todo_app_screen.png',
     scale: 0.42,
+    opacity: 0.1,
     child: MyScreen(),
   );
 }

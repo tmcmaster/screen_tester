@@ -17,6 +17,12 @@ dependencies:
     sdk: flutter
   #pixel_perfect: ^1.1.0
   device_preview: ^0.7.3
+  flutter_riverpod:
+  sprintf:
+  theme_builder:
+#    path: ../theme_builder
+    git:
+      url: https://github.com/tmcmaster/theme_builder.git
 
 dev_dependencies:
   flutter_test:
@@ -26,11 +32,10 @@ dev_dependencies:
   test:
 
   flutter_workbench:
+#    path: ../flutter_workbench
     git:
       url: https://github.com/tmcmaster/flutter_workbench.git
   widget_tester:
+#    path: ../widget_tester
     git:
       url: https://github.com/tmcmaster/widget_tester.git
-  theme_builder:
-    git:
-      url: https://github.com/tmcmaster/theme_builder.git

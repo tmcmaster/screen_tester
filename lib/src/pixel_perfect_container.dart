@@ -5,12 +5,14 @@ import 'pixel_perfect/pixel_perfect.dart';
 class PixelPerfectContainer extends StatelessWidget {
   final String image;
   final double scale;
+  final double opacity;
   final Widget child;
 
   const PixelPerfectContainer({
     Key? key,
     required this.image,
     required this.scale,
+    required this.opacity,
     required this.child,
   }) : super(key: key);
 
@@ -29,7 +31,7 @@ class PixelPerfectContainer extends StatelessWidget {
             scale: 1 / scale,
             initBottom: 20, //  default bottom distance (optional)
             offset: Offset(0, 0), // default image offset (optional)
-            initOpacity: 1, // init opacity value (optional)
+            initOpacity: opacity, // init opacity value (optional)
             child: Scaffold(
               body: Container(
                 decoration: BoxDecoration(
