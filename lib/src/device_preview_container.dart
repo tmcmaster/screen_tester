@@ -6,11 +6,15 @@ import 'package:flutter/material.dart';
 
 class DevicePreviewContainer extends StatelessWidget {
   final DeviceInfo device;
+  final List<DeviceInfo> devices;
+  final bool toolbar;
   final Widget child;
 
   const DevicePreviewContainer({
     Key? key,
     required this.device,
+    this.devices = const [],
+    this.toolbar = false,
     required this.child,
   }) : super(key: key);
 
@@ -25,8 +29,8 @@ class DevicePreviewContainer extends StatelessWidget {
       ),*/
         Expanded(
           child: DevicePreview(
-            isToolbarVisible: true,
-            //devices: [Devices.ios.iPhone11],
+            isToolbarVisible: toolbar,
+            devices: (devices.isEmpty ? Devices.all : devices),
             defaultDevice: device,
             enabled: true,
             plugins: [

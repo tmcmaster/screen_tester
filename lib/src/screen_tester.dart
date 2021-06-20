@@ -47,6 +47,8 @@ class ScreenTester extends ConsumerWidget {
   Widget _buildDevicePreviewContainer(child) {
     return DevicePreviewContainer(
       device: options.device,
+      devices: options.devices,
+      toolbar: options.toolbar,
       child: (options.safeArea ? SafeArea(child: child) : child),
     );
   }

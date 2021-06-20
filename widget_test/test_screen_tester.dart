@@ -11,6 +11,8 @@ void main() {
     styles: MyStyle.themes,
     options: ScreenTesterOptions(
       device: Devices.ios.iPhone11,
+      //devices: [Devices.ios.iPhone11, Devices.ios.iPhone11Pro],
+      // toolbar: false,
       image: 'assets/images/todo_app_screen.png',
       scale: 0.49,
     ),

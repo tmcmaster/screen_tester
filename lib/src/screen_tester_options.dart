@@ -4,20 +4,24 @@ import 'package:sprintf/sprintf.dart';
 
 class ScreenTesterOptions {
   late final DeviceInfo? _device;
+  late final List<DeviceInfo>? _devices;
   late final String? _image;
   late final String? _styledImage;
   late final double scale;
   late final double opacity;
+  late final bool toolbar;
   late final ThemeData? _theme;
   late final ThemeData? _darkTheme;
   final bool safeArea = false;
 
   ScreenTesterOptions({
     DeviceInfo? device,
+    List<DeviceInfo>? devices,
     String? image,
     String? styledImage,
     double? scale,
     double? opacity,
+    bool? toolbar,
     ThemeData? theme,
     ThemeData? darkTheme,
   }) {
@@ -25,12 +29,16 @@ class ScreenTesterOptions {
     _styledImage = styledImage;
     this.scale = scale ?? 1;
     this.opacity = opacity ?? 0.5;
+    this.toolbar = toolbar ?? true;
     _device = device;
+    _devices = devices ?? [];
     _theme = theme;
     _darkTheme = darkTheme;
   }
 
   DeviceInfo get device => _device ?? Devices.ios.iPadiPad;
+  List<DeviceInfo> get devices => _devices ?? [];
+
   String get image {
     if (_image == null) throw AssertionError('Image was not supplied.');
     return _image!;
