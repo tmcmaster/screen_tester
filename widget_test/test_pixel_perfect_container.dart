@@ -4,7 +4,7 @@ import 'widgets/my_screen.dart';
 import 'widgets/my_style.dart';
 
 void main() {
-  FlutterWorkbench.runPixelPerfectApp(
+  FlutterWorkbench.runAppPixelPerfect(
     title: 'PixelPerfect',
     styles: MyStyle.themes,
     image: 'assets/images/todo_app_screen.png',

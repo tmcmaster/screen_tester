@@ -6,7 +6,7 @@ import 'widgets/my_screen.dart';
 import 'widgets/my_style.dart';
 
 void main() {
-  FlutterWorkbench.runScreenTesterApp(
+  FlutterWorkbench.runAppScreenTester(
     title: 'ScreenTester',
     styles: MyStyle.themes,
     options: ScreenTesterOptions(

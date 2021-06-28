@@ -5,7 +5,7 @@ import 'widgets/my_screen.dart';
 import 'widgets/my_style.dart';
 
 void main() {
-  FlutterWorkbench.runDevicePreviewApp(
+  FlutterWorkbench.runAppDevicePreview(
     title: 'DevicePreview',
     styles: MyStyle.themes,
     device: Devices.ios.iPhone11,
